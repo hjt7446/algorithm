@@ -6,10 +6,18 @@ import java.util.Scanner;
 public class Main {
     public static ArrayList<String> solution(int n, String[] input) {
         ArrayList<String> answer = new ArrayList<>();
-        /*for (String x: input) {
+
+        for (String x: input) {
             String tmp = new StringBuilder(x).reverse().toString();
             answer.add(tmp);
-        }*/
+        }
+
+        return answer;
+    }
+
+    public static ArrayList<String> solution2(int n, String[] input) {
+        ArrayList<String> answer = new ArrayList<>();
+
         for (String x : input) {
             char[] s = x.toCharArray();
             int lt = 0;

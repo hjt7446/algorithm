@@ -8,14 +8,22 @@ public class Main {
         input1 = input1.toUpperCase();
         input2 = Character.toUpperCase(input2);
 
-        /*for (int i = 0; i<input1.length(); i++) {
-            if (input1.charAt(i) == input2) {
-                answer++;
-            }
-        }*/
-
         for (char x : input1.toCharArray()) {
             if (x == input2) {
+                answer++;
+            }
+        }
+
+        return answer;
+    }
+
+    public static int solution2(String input1, char input2) {
+        int answer = 0;
+        input1 = input1.toUpperCase();
+        input2 = Character.toUpperCase(input2);
+
+        for (int i = 0; i<input1.length(); i++) {
+            if (input1.charAt(i) == input2) {
                 answer++;
             }
         }

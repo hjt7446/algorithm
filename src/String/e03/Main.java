@@ -17,7 +17,14 @@ public class Main {
             }
         }
 
-        /*int pos = 0;
+        return a;
+    }
+
+    public static String solution2(String input1) {
+        String a ="";
+        int max = Integer.MIN_VALUE;
+        int pos = 0;
+
         while ((pos=input1.indexOf(" ")) != -1) {
             String tmp = input1.substring(0, pos);
             int len = tmp.length();
@@ -27,7 +34,7 @@ public class Main {
             }
             input1 = input1.substring(pos+1);
         }
-        if (input1.length()>max) a = input1;*/
+        if (input1.length()>max) a = input1;
         return a;
     }
     public static void main(String[] args) {

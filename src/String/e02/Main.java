@@ -12,12 +12,18 @@ public class Main {
             }else {
                 answer+=(char)(x+32);
             }
+        }
+        return answer;
+    }
 
-            /*if (Character.isLowerCase(x)) {
+    public static String solution2(String input1) {
+        String answer ="";
+        for (char x : input1.toCharArray()) {
+            if (Character.isLowerCase(x)) {
                 answer+=Character.toUpperCase(x);
             }else {
                 answer+=Character.toLowerCase(x);
-            }*/
+            }
         }
         return answer;
     }
